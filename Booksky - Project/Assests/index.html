@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuillKeep</title>
+    <!-- link style css -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- link google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Kavivanar&family=Lilita+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- link fontawesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- link bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <!-- link favicon -->
+     <link rel="shortcut icon" href="./img/flaticon.png" type="image/x-icon">
+
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-container">
+        <div class="container">
+          <a class="navbar-brand" href="#"><h1>QuillKeep</h1></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+             
+            </ul>
+            <div class="navbar-icons">
+                <div>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <div>
+                <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+                <div>
+                    <i class="fa-solid fa-user"></i>
+                </div>
+               
+            </div>
+          </div>
+        </div>
+      </nav>
+    
+   
+
+    <div class="container-box">
+        <div class="book-box">
+            <h1>Rich Dad poor Dad</h1>
+        <h3>Robert Kiyosaki</h3>
+        <p>Rich Dad Poor Dad by Robert Kiyosaki contrasts the financial philosophies of his two "dads": his biological father (Poor Dad) and the father of his best friend (Rich Dad). The book emphasizes financial education, investing, and building wealth through assets, challenging traditional beliefs about money, jobs, and formal education.</p>
+        <button onclick="delBook(event)">Delete</button>
+        </div>
+        
+    </div>
+    
+    <div class="popup-overlay"></div>
+    <div class="popup-box">
+        <h4>Add Book</h4>
+        <form >
+            <input type="text" placeholder="Enter Book Name" id="book-name-input">
+            <input type="text" placeholder="Enter Author Name" id="book-author-input">
+            <textarea  placeholder="Description" id="book-description"></textarea>
+        </form>
+        <button id="add-book">ADD</button>
+        <button id="cancel-popup">Delete</button>
+    </div>
+    <button class="add-btn" id="add-popup-btn">+</button>
+
+    <script src="./js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+</body>
+</html>
